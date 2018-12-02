@@ -1,4 +1,4 @@
-// Disabling EHCI #1 (and EHCI #2)
+// Disabling EHCI #1 and EHCI #2 Controllers
 
 #ifndef NO_DEFINITIONBLOCK
 DefinitionBlock("", "SSDT", 2, "L440", "_DEHCI", 0)

@@ -298,7 +298,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 dart=0 nv_disable=1 -cdfon</string>
+		<string>dart=0 -cdfon</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -307,7 +307,7 @@
 		<integer>5</integer>
 	</dict>
 	<key>Comment</key>
-	<string>This file is for Haswell graphics that require FakeID=0x04128086</string>
+	<string>This file is for Lenovo ThinkPad L440</string>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
@@ -316,21 +316,16 @@
 			<integer>0</integer>
 		</dict>
 		<key>FakeID</key>
-		<dict>
-			<key>#IntelGFX</key>
-			<string>0x04128086</string>
-		</dict>
+		<dict/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
 			<dict>
-				<key>## @1 HDMI</key>
+				<key>## @1 Mini DisplayPort</key>
 				<string></string>
 				<key>## @2 VGA</key>
 				<string></string>
 				<key>#AAPL00,override-no-connect</key>
-				<data></data>
-				<key>#AAPL00,override-no-edid</key>
 				<data></data>
 				<key>AAPL,ig-platform-id</key>
 				<data>BgAmCg==</data>
@@ -364,8 +359,6 @@
 			</dict>
 			<key>PciRoot(0)/Pci(0x1b,0)</key>
 			<dict>
-				<key>#PinConfigurations</key>
-				<data></data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
@@ -437,13 +430,6 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>#EDID</key>
-		<dict>
-			<key>Inject</key>
-			<false/>
-		</dict>
-		<key>#ig-platform-id</key>
-		<string>0x0a260006</string>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -503,20 +489,6 @@
 		</array>
 		<key>KextsToPatch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>RiV1VCUwNHgA</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>RiV1VHh4eHgA</data>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Zeroing 10ec0885 codec</string>

@@ -12,8 +12,6 @@ DefinitionBlock("", "SSDT", 2, "L440", "_L440", 0)
     #include "SSDT-PNLF.dsl"
     #include "SSDT-LPC.dsl"
     #include "SSDT-GPRW.dsl"
-    #include "SSDT-HDEF.dsl"
-    #include "SSDT-HDAU.dsl"
     #include "SSDT-ALC3232.dsl"
 }
 //EOF
